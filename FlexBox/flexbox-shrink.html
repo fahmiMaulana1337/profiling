@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlexBox</title>
+    <style>
+      .content {
+        background-color: aqua;
+        border: 2px solid blue;
+        margin: 5px;
+        padding: 5px;
+        /* width: 200px; */
+      }
+      .container {
+        display: flex;
+      }
+      .content1 {
+        flex-shrink: 1;
+      }
+      .content2 {
+        flex-shrink: 2;
+      }
+      .content3 {
+        flex-shrink: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content content1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste veniam
+        accusantium, minus voluptate eos voluptas vel doloribus voluptates quas
+        et ullam ab debitis omnis, iusto, assumenda explicabo laudantium rem
+        culpa!
+      </div>
+      <div class="content content2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, ad
+        incidunt dicta expedita voluptatem in? Neque illum similique iste
+        perspiciatis modi nisi deserunt reprehenderit laudantium soluta aliquam
+        sed, repellendus reiciendis.
+      </div>
+      <div class="content content3">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim,
+        voluptatem dolor fuga repellat consequuntur debitis rem cupiditate, quae
+        accusamus molestiae dignissimos quam saepe officia sit illum voluptas
+        provident optio amet.
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- 
+    flex container paling luar
+
+
+            Flex Item
+
+            Main Axis  kiri ke kanan
+
+            Cross Axis atas Bawah
+
+
+            Flex Default :  Kiri Ke Kanan
+
+                    Flex Direction : row , row-reverse - column -column-reverse
+
+                         Flex Wrap :  Default(nowrap)
+
+                                    Flex-wrap ,Flex-wrap;
+ -->
