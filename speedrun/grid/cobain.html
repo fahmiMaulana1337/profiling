@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-areas:
+          "header header header"
+          "resi resi resi"
+          "barcode barcode barcode"
+          "ek ek ek"
+          "receiver receiver receiver"
+          "footer footer footer"
+          "footnote footnote footnote";
+        width: 600px;
+        padding: 10px;
+        margin: 10px;
+      }
+
+      .header {
+        grid-area: header;
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+        grid-template-areas: "title . invoice";
+        border: 2px solid black;
+        align-items: center;
+      }
+
+      .ek {
+        grid-area: ek;
+        display: grid;
+        grid-template-areas: "pos ekspedisi berat";
+        border: 2px solid black;
+      }
+
+      .footer {
+        grid-area: footer;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "penerima pengirim";
+        border: 2px solid black;
+      }
+
+      .title {
+        grid-area: title;
+        padding: 3px;
+      }
+
+      .invoice {
+        grid-area: invoice;
+        text-align: end;
+      }
+
+      .resi {
+        grid-area: resi;
+        border: 2px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        width: 90;
+      }
+
+      .barcode {
+        grid-area: barcode;
+        border: 2px solid black;
+        display: flex;
+        height: 100px;
+      }
+
+      .barcode img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .pos {
+        grid-area: pos;
+        align-items: center;
+      }
+
+      .ekspedisi {
+        grid-area: ekspedisi;
+        align-items: center;
+        margin-left: -130px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+      }
+
+      .berat {
+        grid-area: berat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        margin-left: -130px;
+      }
+
+      .pengirim {
+        grid-area: pengirim;
+      }
+
+      .penerima {
+        grid-area: penerima;
+      }
+
+      .footnote {
+        grid-area: footnote;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "nontun keterangan";
+        justify-content: center;
+        align-content: center;
+        border: 2px solid black;
+        height: 30px;
+      }
+      .nontun {
+        display: grid;
+        border: 2px solid black;
+        width: 96%;
+        justify-items: center;
+        align-items: center;
+      }
+      .keterangan {
+        display: grid;
+        border: 2px solid black;
+        width: 96%;
+        justify-items: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="title">
+          <img src="tokped.png" style="max-width: 100px" alt="Tokopedia Logo" />
+        </div>
+        <div class="invoice">TSGJHADGHJ-12378921</div>
+      </div>
+      <div class="resi">
+        <div
+          class="box-resi"
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 97%;
+            border: 2px solid black;
+          "
+        >
+          <b>TUASIW-238902131</b>
+        </div>
+      </div>
+      <div class="barcode">
+        <img
+          src="../berhasil-menamatkan-flexbox/barcode1.png"
+          alt="Barcode Image"
+        />
+      </div>
+      <div class="ek">
+        <div class="pos">
+          <img src="pos.png" style="max-width: 70px" alt="" />
+        </div>
+        <div class="ekspedisi">
+          Pos Khusus Indonesia <br />
+          <b>Pos Khilat Khusus</b>
+        </div>
+        <div class="berat">
+          Berat: <br />
+          0.2KG
+        </div>
+      </div>
+      <div class="footer">
+        <div class="pengirim">
+          <p>
+            Penerima: <b>Misna (Subedit Retail Business)</b><br />
+            08123671231
+          </p>
+          <p>
+            Gedung Kesenian No.2 Jakarta Pusat Sawah Besar, Kota Administrasi
+            Jakarta Pusat, DKI Jakarta, 10710
+          </p>
+        </div>
+        <div class="penerima">
+          <p>
+            Penerima: <b>Misna (Subedit Retail Business)</b><br />
+            08123671231
+          </p>
+          <p>
+            Gedung Kesenian No.2 Jakarta Pusat Sawah Besar, Kota Administrasi
+            Jakarta Pusat, DKI Jakarta, 10710
+          </p>
+        </div>
+      </div>
+      <div class="footnote">
+        <div class="nontun"><b> NONTUNAI </b></div>
+        <div class="keterangan"><b>PENJUAL TIDAK PERLU BAYAR </b></div>
+      </div>
+    </div>
+  </body>
+</html>

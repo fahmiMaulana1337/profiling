@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    .content {
+      /* vertical-align: top; */
+      display: inline-block;
+      background-color: brown;
+      width: 200px;
+    }
+  </style>
+  <body>
+    <div class="content">
+      <h1>Ini konten 1</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aperiam
+        amet, laboriosam, repellendus, odit numquam repellat dolores aliquam
+        exercitationem beatae rerum ipsam dolorum commodi sequi ipsa error
+        distinctio tempore doloribus?
+      </p>
+    </div>
+    <div class="content">
+      <h1>Ini konten 2</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aperiam
+        amet, laboriosam, repellendus, odit numquam repellat dolores aliquam
+        exercitationem beatae rerum ipsam dolorum commodi sequi ipsa error
+        distinctio tempore doloribus?
+      </p>
+    </div>
+
+    <div class="content"></div>
+  </body>
+</html>
+
+<!-- 
+Display inline = Hanya mengambil tempat secukup nya
+
+Block Mengambil tempat kiri ke kanan komponen diatasnya (Row diambil semua) (kalo ada 2 content akan ke enter)
+
+inline-block = di tampilkan secara inline tapi kita bisa mengubah tinggi dan lebar komponen nya layaknya block
+
+trial:
+Inline tidak ada width dan height
+ normal flow akan di menjadi block dengan membagi kompenen tersebut menjadi 2 block  (content: konten 1 dan konten 2)
+ inline-block akan menjadi block tetapi 2 komponen content akan menjadi satu (content: konten 1 dan konten 2)
+-->

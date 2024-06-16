@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    .base {
+      width: 700px;
+    }
+    .top {
+      display: flex;
+      border: 2px solid black;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .top-content {
+      padding: 2px;
+    }
+    .title {
+      display: flex;
+    }
+    .resi-barcode {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 2px solid black;
+    }
+    .resi-box {
+      display: flex;
+      width: 90%;
+      padding: 10px;
+      border: 2px solid black;
+      justify-content: center;
+      margin: 5px;
+    }
+    .barcode {
+      width: 102%;
+      height: 100px;
+    }
+    .image-barcode {
+      width: 100%;
+      height: 100%;
+    }
+
+    #barcode {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensures the image maintains aspect ratio */
+      image-rendering: -webkit-optimize-contrast; /* Chrome, Safari */
+      image-rendering: crisp-edges; /* Firefox */
+      image-rendering: pixelated; /* Other */
+    }
+
+    .ekspedisi {
+      display: flex;
+      align-items: center;
+      padding: 3px;
+      gap: 0px;
+      height: 70px;
+      border: 2px solid black;
+    }
+    .pos-content {
+      width: 120px;
+    }
+    .receiver {
+      display: flex;
+      border: 2px solid black;
+    }
+    .footer {
+      display: flex;
+      border: 2px solid black;
+      height: 40px;
+      align-items: center;
+    }
+    .footer-content1 {
+      width: 50%;
+      /* margin-left: 10px; */
+      justify-content: center;
+      align-items: center;
+      border-color: 5px solid black;
+      display: flex;
+    }
+    .footer-content2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* margin-left: 10px; */
+      width: 50%;
+      border-color: 5px solid black;
+    }
+    .note {
+      border: 2px solid black;
+      width: 97%;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+  <body>
+    <div class="base">
+      <div class="top">
+        <div class="top-content" style="margin-left: 10px">
+          <img src="tokped.png" width="100px" alt="" />
+        </div>
+        <div class="top-content" style="margin-right: 10px">
+          <b>231798317321032813-0</b>
+        </div>
+      </div>
+
+      <div class="resi-barcode">
+        <div class="resi-box">
+          <div class="resi-code">231798317321032813-0</div>
+        </div>
+
+        <div class="barcode">
+          <div class="image-barcode">
+            <img id="barcode" src="barcode1.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="ekspedisi">
+        <div class="pos-content" style="width: 100px">
+          <img
+            src="pos.png"
+            alt=""
+            style="object-fit: cover; width: 100%; height: 100%"
+          />
+        </div>
+
+        <div class="pos-content">
+          Pos Indonesia<br />
+          <b> Pos Kilat Khusus</b>
+        </div>
+
+        <div class="pos-content" style="margin-left: 20px">
+          Berat: <br />
+          <b>0.2 Kg</b>
+        </div>
+      </div>
+
+      <div class="receiver">
+        <div class="penerima">
+          <p>Penerima : Misna (Subedit Retail Bussines) (********829)</p>
+          <p>
+            Gedung Kesenian No.2 Jakarta Pusat Sawah Besar, Kota Administrasi
+            Jakarta Pusat DKI Jakarta, 10710
+          </p>
+        </div>
+        <div class="pengirim">
+          <p>Penerima : Misna (Subedit Retail Bussines) (********829)</p>
+          <p>
+            Gedung Kesenian No.2 Jakarta Pusat Sawah Besar, Kota Administrasi
+            Jakarta Pusat DKI Jakarta, 10710
+          </p>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="footer-content1">
+          <div class="note">
+            <p><b>Non Tunai</b></p>
+          </div>
+        </div>
+        <div class="footer-content2">
+          <div class="note">
+            <p>Penjual tidak perlu bayar apapun ke kurir</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .content {
+      background-color: bisque;
+      width: 200px;
+      margin: 10px;
+      border: 2px solid blue;
+      padding: 10px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="content">
+        <h1>Ini konten 1</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+          aperiam amet, laboriosam, repellendus, odit numquam repellat dolores
+          aliquam exercitationem beatae rerum ipsam dolorum commodi sequi ipsa
+          error distinctio tempore doloribus?
+        </p>
+      </div>
+
+      <div class="content">
+        <h1>Ini konten 2</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+          aperiam amet, laboriosam, repellendus, odit numquam repellat dolores
+          aliquam exercitationem beatae rerum ipsam dolorum commodi sequi ipsa
+          error distinctio tempore doloribus?
+        </p>
+      </div>
+
+      <div class="content">
+        <h1>Ini konten 3</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+          aperiam amet, laboriosam, repellendus, odit numquam repellat dolores
+          aliquam exercitationem beatae rerum ipsam dolorum commodi sequi ipsa
+          error distinctio tempore doloribus?
+        </p>
+      </div>
+
+      <div class="content">
+        <h1>Ini konten 3</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+          aperiam amet, laboriosam, repellendus, odit numquam repellat dolores
+          aliquam exercitationem beatae rerum ipsam dolorum commodi sequi ipsa
+          error distinctio tempore doloribus?
+        </p>
+      </div>
+
+      <div class="content">
+        <h1>Ini konten 3</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+          aperiam amet, laboriosam, repellendus, odit numquam repellat dolores
+          aliquam exercitationem beatae rerum ipsam dolorum commodi sequi ipsa
+          error distinctio tempore doloribus?
+        </p>
+      </div>
+
+      <div class="content">
+        <h1>Ini konten 3</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+          aperiam amet, laboriosam, repellendus, odit numquam repellat dolores
+          aliquam exercitationem beatae rerum ipsam dolorum commodi sequi ipsa
+          error distinctio tempore doloribus?
+        </p>
+      </div>
+
+      <div class="content">
+        <h1>Ini konten 3</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+          aperiam amet, laboriosam, repellendus, odit numquam repellat dolores
+          aliquam exercitationem beatae rerum ipsam dolorum commodi sequi ipsa
+          error distinctio tempore doloribus?
+        </p>
+      </div>
+
+      <div class="content">
+        <h1>Ini konten 3</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+          aperiam amet, laboriosam, repellendus, odit numquam repellat dolores
+          aliquam exercitationem beatae rerum ipsam dolorum commodi sequi ipsa
+          error distinctio tempore doloribus?
+        </p>
+      </div>
+
+      <div class="content">
+        <h1>Ini konten 3</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+          aperiam amet, laboriosam, repellendus, odit numquam repellat dolores
+          aliquam exercitationem beatae rerum ipsam dolorum commodi sequi ipsa
+          error distinctio tempore doloribus?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- DISPLAY
+Display inline = Hanya mengambil tempat secukup nya
+
+Block Mengambil tempat kiri ke kanan komponen diatasnya (Row diambil semua) (kalo ada 2 content akan ke enter)
+
+inline-block = di tampilkan secara inline tapi kita bisa mengubah tinggi dan lebar komponen nya layaknya block
+
+trial:
+Inline tidak ada width dan height
+ normal flow akan di menjadi block dengan membagi kompenen tersebut menjadi 2 block  (content: konten 1 dan konten 2)
+ inline-block akan menjadi block tetapi 2 komponen content akan menjadi satu (content: konten 1 dan konten 2)
+-->
+
+<!-- FLEXBOX
+
+* display = flex;
+FLEX CONTAINER = Sebuah komponen yang display nya kita set sebagai flex.
+misal kita punya DIV dan kita set display nya sebagai flex maka div tersebut menjadi flex container
+
+
+XXX Container = common used style; XXXX
+FLEX DIRECTION
+ secara default dari kiri ke kanan;
+
+ Kita bisa ganti menggunakan flex direction;
+
+ EX: 
+ *flex-direction:row;
+ *flex-direction:row-reverse;
+ *flex-direction:Column;
+ *flex-direction:column-reverse;
+
+
+ FLEX WRAP :
+ flex wrap : secara default dari kiri ke kanan atau atas ke bawah;
+
+ Secara Default, Flex item akan di tampilkan dalam satu garis baik itu vertical (Row) maupun horizontal (Column);
+
+ Jika kita tidak menggunakan wrap maka componen akan terus tampil ke kanan sampai butuh scroll.
+
+ Kalo pakai wrap kalo sudah abis maka akan muncul ke bawah;
+
+
+
+FLEX ITEM = Adalah Kompenen Komponen Yang berada di dalam FLEX CONTAINER;
+
+Flex Item adalah anak(children) langsung dari flex container;
+
+
+Main Axis = Kiri ke kanan
+Crss Axis = Atas Ke Bawah
+
+margin = margin semua komponen /Luar
+Padding = padding semua komponen / dalam
+
+
+ Order Flex ITEM
+
+-->

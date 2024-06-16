@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px;
+        height: 600px;
+        background-color: antiquewhite;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+      }
+      .content {
+        background-color: bisque;
+        border: 2px solid black;
+        padding: 10px;
+      }
+      .content1 {
+        justify-self: end;
+        align-self: end;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content content1">1</div>
+      <div class="content">2</div>
+      <div class="content">3</div>
+      <div class="content">4</div>
+      <div class="content">5</div>
+      <div class="content">6</div>
+      <div class="content">7</div>
+      <div class="content">8</div>
+      <div class="content">9</div>
+    </div>
+  </body>
+</html>
+
+<!-- 
+Grid Adalah Sistem Tata Letak Berbasis grid dua dimensi
+flexbox hanya satu dimensi
+
+
+
+
+GRID TERMINOLOGY
+
+GRID CONTAINER = grid container  Sebuah komponen yang display nya kita set sebagai grid.
+
+GRID = SAMA MIRIP SEPERTI TABLE ADA COLUMN DAN TABLE
+
+GRID ITEM = ADALAH KOMPONEN CHILDREN DARI GRID CONTAINER
+
+GRID LINE  = garis pemisah grid item, HORIZONTAL MAUPUN VERTICAL
+
+GRID CELL = Area yang terdapat di dalam kolom dan baris yang di pisah oleh grid line
+
+GRID TRACK (BARIS) =  Bagian Antara dua grid line atau bisa di bilang baris.
+
+GRID AREA = Total Area dari beberapa Grid Cell
+
+GRID TEMPLATE = Untuk menentukan kolom dan baris dalam grid;
+grid-template columns = menentukan columns;
+grid-template rows = menentukan rows;
+
+COLUMN KE SAMPING (misal column : 200px 100px 200px); grid cell 1 lebar samping 200px;
+ROW KE BAWAH  (misal row :100px ) : grid cell 1 lebar ke bawah 100px;
+
+
+GRID ITEMS:
+
+
+GRID ITEMS START dan END:
+
+GRID ITEM :
+- bisa di tentukan mau mulai dari kolom atau baris berapa
+- Untuk memudahkan ketika membuat row template dan colum template kita bisa memberi nama sehingga mudah di gunakan
+
+GRID LINE NAME:
+column line : sela diantara komponen ke samping.
+row line : sela diantara komponen ke bawah.
+grid column start: mulai kesamping
+
+grid column end: akhir ke samping
+
+grid row start: mulai dari atas
+
+grid row end: akhir bawah
+
+!use this instead grid line
+GRID AREA: 
+
+grid-template-areas:
+Contoh penggunaan:
+.container {
+        display: grid;
+        grid-template-columns: 400px auto 400px;
+        grid-template-rows: 50px auto 100px;
+        grid-template-areas:
+          "header header header"
+          ". content ."
+          "footer footer footer";
+      }
+
+GRID ALIGNMENT: sama seperti flexbox kita bisa melakukan penyelarasan seperti layaknya flexbox
+                salah satu perbedaan nya, kita bisa melakukan seluruh penyelarasan gridcell atau hanya untuk satu grid cell saja
+
+
+attribute nya sama seperti justify content;
+
+GRID JUSTIFY CONTENT:
+
+justify-content  (SAMA SAJA SEPERTI FLEXBOX)
+
+ALIGN CONTENT (tidak seperti flexbox yang harus menggunakan flexwarp untuk menggunakan align content)
+jadi kita bisa melakukan dengan align content (CONTENT) langsung instead align item (ITEM)
+
+JUSTIFY ITEM:
+SAMA SEPERTI JUSTIFY CONTENT TETAPI HANYA BEREFEK PADA (CELL NYA)
+
+ALIGN ITEM: SAMA SEPERTI ALIGN CONTENT TAPI HANYA BEREFEK PADA (ITEM DI DALAM CELL)
+
+JUSTIFY SELF & ALIGN SELF : JIKA JUSTIFY CONTENT/ITEM / ALIGN ITEM/CONTENT akan berdampak kesemua cell. 
+Jika Menggunakan justify self atau align self kita bisa spesifik ke setiap cell nya
+
+-->

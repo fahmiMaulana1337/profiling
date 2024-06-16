@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    .container {
+      display: flex;
+      height: 1200px;
+      background-color: aqua;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: center;
+    }
+    .content {
+      background-color: bisque;
+      margin: 10px;
+      border: 2px solid blue;
+      padding: 10px;
+      width: 1000px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="content">
+        <h1>konten 1</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem labore
+          beatae nisi ex quae molestiae dignissimos fugit, deserunt consectetur
+          excepturi dolores vitae esse sint dicta magni provident perferendis.
+          Laudantium, eveniet.
+        </p>
+      </div>
+      <div class="content">
+        <h1>konten 2</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem labore
+          beatae nisi ex quae molestiae dignissimos fugit, deserunt consectetur
+          excepturi dolores vitae esse sint dicta magni provident perferendis.
+          Laudantium, eveniet.
+        </p>
+      </div>
+
+      <div class="content">
+        <h1>konten 3</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem labore
+          beatae nisi ex quae molestiae dignissimos fugit, deserunt consectetur
+          excepturi dolores vitae esse sint dicta magni provident perferendis.
+          Laudantium, eveniet.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- DISPLAY
+Display inline = Hanya mengambil tempat secukup nya
+
+Block Mengambil tempat kiri ke kanan komponen diatasnya (Row diambil semua) (kalo ada 2 content akan ke enter)
+
+inline-block = di tampilkan secara inline tapi kita bisa mengubah tinggi dan lebar komponen nya layaknya block
+
+trial:
+Inline tidak ada width dan height
+ normal flow akan di menjadi block dengan membagi kompenen tersebut menjadi 2 block  (content: konten 1 dan konten 2)
+ inline-block akan menjadi block tetapi 2 komponen content akan menjadi satu (content: konten 1 dan konten 2)
+-->
+
+<!-- FLEXBOX
+
+* display = flex;
+FLEX CONTAINER = Sebuah komponen yang display nya kita set sebagai flex.
+misal kita punya DIV dan kita set display nya sebagai flex maka div tersebut menjadi flex container
+
+
+XXX Container = common used style; XXXX
+FLEX DIRECTION
+ secara default dari kiri ke kanan;
+
+ Kita bisa ganti menggunakan flex direction;
+
+ EX: 
+ *flex-direction:row;
+ *flex-direction:row-reverse;
+ *flex-direction:Column;
+ *flex-direction:column-reverse;
+
+
+ FLEX WRAP :
+ flex wrap : secara default dari kiri ke kanan atau atas ke bawah;
+
+ Secara Default, Flex item akan di tampilkan dalam satu garis baik itu vertical (Row) maupun horizontal (Column);
+
+ Jika kita tidak menggunakan wrap maka componen akan terus tampil ke kanan sampai butuh scroll.
+
+ Kalo pakai wrap kalo sudah abis maka akan muncul ke bawah;
+
+
+
+FLEX ITEM = Adalah Kompenen Komponen Yang berada di dalam FLEX CONTAINER;
+
+Flex Item adalah anak(children) langsung dari flex container;
+
+
+Main Axis = Kiri ke kanan
+Crss Axis = Atas Ke Bawah
+
+margin = margin semua komponen /Luar
+Padding = padding semua komponen / dalam
+
+
+Order Flex ITEM:
+
+Mengatur urutan Flex Item
+
+
+FLEX GROW: Untuk mengatur kesempatan untuk mengembangkan komponen (Scope Kontainer)
+FLEX Shirnk: Untuk mengatur kesempatan untuk menyesutkan komponen (Scope Kontainer)
+
+
+FLEX BASIS
+minimal dari suatu komponen flex item. hanya bisa di gunakan bersama flex-shrink atau flex-grow
+
+FLEX ALIGNMENT 
+ FLEX item yang terdapat di dalam flex container, bisa kita rapikan atau selaraskan dengan beberapa atribut
+
+ JUSTIFY CONTENT : MENENTUKAN JARAK ANTAR FLEX ITEM;
+ 
+ - JUSTIFY CENTER
+    Kalo Ga ada width nya ga bisa ketengah (default mengambil size kontent nya)
+ - JUSTIFY START
+    Mulai Dari kiri (start)
+ - JUSTIFY END
+    mulai dari kanan
+ - JUSTIFY SPACE BETWEEN
+   ada space antara item
+ - JUSTIFY SPACE AROUND
+    ada jarak space
+ - JUSTIFY SPACE EVENLY
+    ada jarak space 
+
+ALIGNT ITEM
+
+Align Item mengatur letak komponen flex item dalam Cros axis ( ATAS KE BAWAH)
+ - FLEX CENTER
+   MULAI DARI TENGAH DARI ATAS BAWAH
+ - FLEX START
+    Mulai Dari ATAS kiri  (start)
+ - FLEX END
+    mulai dari BAWAH KIRI
+ - FLEX STRETCH
+    DITARIK DARI ATAS SAMPE BAWAH
+ - BASE LINE
+   DEFAULT DARI SIZE BASE NYA
+ - SPACE AROUND
+  ada jarak space
+ - SPACE EVENLY
+  ada jarak space 
+
+  ALIGN CONTENT ( JIKA MENGGUNAKAN WRAP PAKAI INI BOS)
+  
+  NOTE:
+  MIRIP SEPERTI ALIGN ITEMS TETAPI ALIGN CONTENT HANYA BISA DILAKUKAN JIKA CONTENT NYA DI WRAP
+
+-->
